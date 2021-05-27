@@ -1,3 +1,16 @@
+buildscript {
+	ext.kotlin_version = "1.4.30"
+	repositories {
+		google()
+		jcenter()
+	}
+	dependencies {
+		classpath "com.android.tools.build:gradle:4.1.2"
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+		classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
+	}
+}
+/************* added from SDK for android*******************************/
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-parcelize'
 
